@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ransomware By Rizzz</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: red;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      font-size: 40px;
+      animation: blink 1s infinite;
+    }
+
+    p {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    button {
+      margin: 20px 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #passwordBox {
+      display: none;
+      margin-top: 20px;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <script>
+    // Munculkan alert saat pertama kali dibuka
+    window.onload = function() {
+      alert("⚠️ Terdeteksi aplikasi mencurigakan!\nSistem Anda telah disusupi ransomware!");
+    };
+
+    function showPasswordBox() {
+      document.getElementById("passwordBox").style.display = "block";
+    }
+
+    function doPayment() {
+      alert("💸 Silahkan transfer ke Dana: 08xxxxxxxxxx\nSetelah bayar, hubungi admin.");
+    }
+  </script>
+</head>
+<body>
+  <h1>🛑 Ransomware By Rizzz🛑</h1>
+  <p>Hahahaha Anda Terkena Ransomware!</p>
+  <p>Silahkan Bayar Sejumlah <strong>100K</strong></p>
+
+  <button onclick="doPayment()">💸 Payment</button>
+  <button onclick="showPasswordBox()">🔐 Password</button>
+
+  <div id="passwordBox">
+    <p>Masukkan Password untuk membuka kunci:</p>
+    <input type="password" placeholder="Masukkan password di sini">
+  </div>
+</body>
+</html>`
